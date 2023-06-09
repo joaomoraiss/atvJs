@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+/*-----HEADER-----*/
+
+h1 {
+  color: rgb(78, 159, 186);
+  font-size: 3.6rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  color: rgb(46, 95, 111);
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: rgb(78, 159, 186);
+}
+
+/*-----HEADER-----*/
+
+
+/*-----MAIN-----*/
+main{
+  margin-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+button {
+  padding: 0.4rem 1rem;
+  background-color:rgb(78, 159, 186);
+  color: white;
+  border-color: rgb(78, 159, 186);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: solid 1px transparent;
+  transition: 0.2s;
+}
+
+button:hover{
+  color:rgb(78, 159, 186) ;
+  background-color:white ;
+  border: solid rgb(78, 159, 186) 1px;
+}
+
+
