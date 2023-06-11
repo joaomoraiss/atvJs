@@ -35,3 +35,7 @@ buttons.forEach(({ button, closeBtn, dialog }) => {
     dialog.close();
   });
 });
+
+
+
+
