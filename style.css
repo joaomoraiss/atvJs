@@ -32,10 +32,28 @@ h2 {
 }
 
 header {
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.middleHeader{
+#likeButton {
+  background-color: white;
+  border-color: rgb(78, 159, 186);
+}
+
+.likes-counter {
+  color: rgb(78, 159, 186);
+}
+
+.leftHeader {
+  margin-left: 2em;
+  width: 1.5em;
+  height: 2em;
+  display: flex;
+}
+
+.middleHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,9 +69,8 @@ header {
 
 /*-----HEADER-----*/
 
-
 /*-----MAIN-----*/
-main{
+main {
   margin-top: 1rem;
 }
 
@@ -62,10 +79,9 @@ main{
   justify-content: space-around;
 }
 
-
 button {
   padding: 0.4rem 1rem;
-  background-color:rgb(78, 159, 186);
+  background-color: rgb(78, 159, 186);
   color: white;
   border-color: rgb(78, 159, 186);
   cursor: pointer;
@@ -76,14 +92,14 @@ button {
   transition: 0.2s;
 }
 
-button:hover{
-  color:rgb(78, 159, 186) ;
-  background-color:white ;
+button:hover {
+  color: rgb(78, 159, 186);
+  background-color: white;
   border: solid rgb(78, 159, 186) 1px;
 }
 
-dialog{
-  border:solid 2px rgb(78, 159, 186);
+dialog {
+  border: solid 2px rgb(78, 159, 186);
   border-radius: 1rem;
   height: 30rem;
   width: 13rem;
@@ -96,7 +112,7 @@ dialog{
   overflow-x: hidden;
 }
 
-@keyframes myFadeIn{
+@keyframes myFadeIn {
   from {
     opacity: 0;
   }
@@ -105,40 +121,35 @@ dialog{
   }
 }
 
-dialog[open]{
-  animation: myFadeIn 1.0s ease normal;
+dialog[open] {
+  animation: myFadeIn 1s ease normal;
 }
 
-dialog:not([open]){
+dialog:not([open]) {
   display: none;
 }
 
-#dialog1{
+#dialog1 {
   left: 3.3rem;
   bottom: 4rem;
 }
 
-#dialog2{
+#dialog2 {
   left: 23rem;
   bottom: 4rem;
 }
 
-#dialog3{
+#dialog3 {
   bottom: 4rem;
   left: 43rem;
 }
 
-#dialog4{
+#dialog4 {
   bottom: 4rem;
   left: 62.2rem;
 }
 
-#dialog5{
+#dialog5 {
   left: 80.5rem;
   bottom: 4rem;
 }
-
-
-
-
-
