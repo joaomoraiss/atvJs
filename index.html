@@ -17,7 +17,7 @@
   <body>
     <header>
       <div class="leftHeader">
-        <button id="likeButton"><img class="img1" src="https://cdn-icons-png.flaticon.com/128/126/126473.png" alt=""> <p><span id="likes-counter">0</span></p></button>
+        <button class="likeButton" id="likeButton"><img class="img1" src="https://cdn-icons-png.flaticon.com/128/126/126473.png" alt=""> <p><span id="likes-counter">0</span></p></button>
       </div>
       <div class="middleHeader">
         <h1>Daniel Silveira</h1>
@@ -28,7 +28,7 @@
     <main>
       <section class="buttons">
         <button id="btn1">Sobre mim</button>
-        <dialog id="dialog1">
+        <dialog class="dialog11" id="dialog1">
           <p>
             Meu nome é Daniel Silveira e sou um desenvolvedor junior front end.
             Tenho paixão pela criação de interfaces interativas e funcionais que
@@ -39,7 +39,7 @@
           <button id="closeBtn1">Fechar</button>
         </dialog>
         <button id="btn2">Experiência</button>
-        <dialog id="dialog2">
+        <dialog class="dialog22" id="dialog2">
           <p>
             <strong>
               Front End Junior | Empresa XYZ Período: Janeiro de 2022 -
@@ -65,25 +65,22 @@
           <button id="closeBtn2">Fechar</button>
         </dialog>
         <button id="btn3">Tecnologias</button>
-        <dialog id="dialog3">
-          <ul>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>Frameworks front-end: Bootstrap, React</li>
-            <li>Ferramentas de versionamento: Git, GitHub</li>
-            <li>Nodejs e Express</li>
-            <li>Design responsivo e otimização de desempenho</li>
-            <li>Resolução de problemas e depuração</li>
-            <li>Comunicação e colaboração em equipe</li>
-          </ul>
+        <dialog class="dialog33" id="dialog3">
+          <form id="itemForm">
+            <input type="text" id="itemInput" placeholder="Digite um item">
+            <button class="addBTN" type="submit">Adicionar</button>
+          </form>
+          <ul id="itemList"></ul>
+          
           <button id="closeBtn3">Fechar</button>
         </dialog>
         <button id="btn4">Objetivo</button>
-        <dialog id="dialog4">
+        <dialog class="dialog44" id="dialog4">
           <p>Busco uma oportunidade como desenvolvedor front end junior, onde possa aplicar e aprimorar minhas habilidades técnicas, trabalhando em projetos desafiadores e colaborando com uma equipe talentosa. Meu objetivo é contribuir para o desenvolvimento de interfaces front-end de alta qualidade, que proporcionem uma excelente experiência ao usuário.</p>
           <button id="closeBtn4">Fechar</button>
         </dialog>
         <button id="btn5">Hobbies</button>
-        <dialog id="dialog5">
+        <dialog class="dialog55" id="dialog5">
           <p>Além do meu interesse pela tecnologia e desenvolvimento front-end, tenho uma variedade de hobbies que me ajudam a relaxar e a manter um equilíbrio saudável entre o trabalho e a vida pessoal. Alguns dos meus hobbies incluem:
           <ul>
             <li>Leitura: Sou apaixonado por literatura e desfruto de diferentes gêneros, como ficção científica, fantasia e desenvolvimento pessoal. A leitura amplia minha visão de mundo e estimula minha criatividade.</li>

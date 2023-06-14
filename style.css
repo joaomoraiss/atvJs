@@ -13,20 +13,22 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   height: 100%;
-  background-color: rgb(218, 234, 247);
+  background-image: url(https://img.freepik.com/vetores-gratis/design-de-estilo-gradiente-minimalista-de-luxo-de-fundo_698780-706.jpg?w=1380&t=st=1686753974~exp=1686754574~hmac=d2d57322f2938a814ddd898229d212a411cc32fac0b0ede9d477ee96f9619be3);
+  background-size: cover;
+  background-position: center;
 }
 
 /*-----HEADER-----*/
 
 h1 {
-  color: rgb(78, 159, 186);
+  color: rgb(199, 193, 193);
   font-size: 3.6rem;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
 
 h2 {
-  color: rgb(46, 95, 111);
+  color: rgb(134, 123, 123);
   margin-top: 0.3rem;
   font-style: italic;
 }
@@ -39,11 +41,11 @@ header {
 
 #likeButton {
   background-color: white;
-  border-color: rgb(78, 159, 186);
+  border-color: rgb(0, 0, 0);
 }
 
-.likes-counter {
-  color: rgb(78, 159, 186);
+#likes-counter {
+  color: rgb(173, 162, 162);
 }
 
 .leftHeader {
@@ -57,14 +59,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/*main:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: rgb(78, 159, 186);
 }
 
 /*-----HEADER-----*/
@@ -81,8 +75,8 @@ main {
 
 button {
   padding: 0.4rem 1rem;
-  background-color: rgb(78, 159, 186);
-  color: white;
+  background-color: rgb(199, 193, 193);
+  color: rgb(35, 32, 32);
   border-color: rgb(78, 159, 186);
   cursor: pointer;
   font-size: 1rem;
@@ -93,13 +87,13 @@ button {
 }
 
 button:hover {
-  color: rgb(78, 159, 186);
+  color: rgb(39, 92, 110);
   background-color: white;
-  border: solid rgb(78, 159, 186) 1px;
+  border: solid rgb(39, 92, 110) 1px;
 }
 
 dialog {
-  border: solid 2px rgb(78, 159, 186);
+  border: solid 2px rgb(39, 92, 110);
   border-radius: 1rem;
   height: 30rem;
   width: 13rem;
@@ -140,6 +134,7 @@ dialog:not([open]) {
 }
 
 #dialog3 {
+  text-align: left;
   bottom: 4rem;
   left: 43rem;
 }
@@ -152,4 +147,83 @@ dialog:not([open]) {
 #dialog5 {
   left: 80.5rem;
   bottom: 4rem;
+}
+
+@media (min-width: 120em) {
+  .likeButton {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .leftHeader {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 0;
+  }
+  button {
+    padding: 0.5rem 1.9rem;
+    font-size: 1.2rem;
+  }
+  .dialog11 {
+    top: 14rem;
+    margin-left: 2rem;
+  }
+
+  .dialog22 {
+    top: 14rem;
+    margin-left: 7rem;
+  }
+
+  .dialog33 {
+    top: 14rem;
+    margin-left: 12rem;
+  }
+
+  .dialog44 {
+    top: 14rem;
+    margin-left: 17rem;
+  }
+
+  .dialog55 {
+    top: 14rem;
+    margin-left: 21.5rem;
+  }
+  h1 {
+    color: rgb(199, 193, 193);
+    font-size: 4.6rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  h2 {
+    font-size: 3.9;
+    color: rgb(134, 123, 123);
+    margin-top: 0.3rem;
+    font-style: italic;
+  }
+
+  dialog{
+    height:40rem;
+    font-size: large;
+  }
+}
+
+.addBTN {
+  padding: 0.2em 0.7em;
+  margin-top: 0.3rem;
+}
+
+#dialog3 button:nth-child(1) {
+  background-color: rgb(159, 156, 156);
+  margin-left: 0.4rem;
+  padding: 0.1em 0.3em;
+  border: solid 1px transparent;
+}
+
+#dialog3 button:nth-child(1):hover {
+  background-color: rgb(54, 48, 48);
+  border: none;
+  color: white;
+  border: solid 1px transparent;
 }
